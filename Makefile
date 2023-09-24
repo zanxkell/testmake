@@ -1,6 +1,6 @@
 #
-# Starter makefile for Assignment 5: Classy Zoo
-# Typing 'make' or 'make zoo' will create an executable file for testing
+# 
+# 
 #
 
 # Start by defining variables for the compiler and compiler flags (makes it easy to change later)
@@ -16,13 +16,13 @@ CFLAGS = -g -Wall -Wextra
 
 default: Employee
 
-# List the object files needed to create the executable file.  For this assignment:
-# Zoo.o, main.o
+# List the object files needed to create the executable file.:
+# 
 
 Employee:	  Employee.o Officer.o Supervisor.o Main.o
 		$(CC) $(CFlags) -o  Employee Employee.o Officer.o Supervisor.o  Main.o 
 
-# First, the rule to create Zoo.o
+# 
 
 Employee.o: 	 Employee.cpp Employee.h
 		$(CC) $(CFLAGS) -c $ Employee.cpp
